@@ -1,17 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68b3081-415b-49b1-9fef-3f2dfdab08ff" name="Default Changelist" comment="" />
+    <list default="true" id="f68b3081-415b-49b1-9fef-3f2dfdab08ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cite_db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cite_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cite_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cite: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpServers">
     <servers>
@@ -120,17 +171,22 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZOxciFSfRr69FMHoZzsmtYfVUt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunManager" selected="PHP Web Page.Unnamed">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -155,7 +211,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584724025837</updated>
-      <workItem from="1584724037538" duration="1697000" />
+      <workItem from="1584724037538" duration="12591000" />
+      <workItem from="1584793444940" duration="23066000" />
     </task>
     <servers />
   </component>
@@ -167,37 +224,61 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="126" y="178" key="#Servers/0.0.1920.1040@0.0.1920.1040" timestamp="1584725027713" />
-    <state x="0" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584725033861">
+    <state x="418" y="88" width="816" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584799460264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584725033861" />
+    <state x="418" y="88" width="816" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584799460264" />
+    <state x="240" y="118" key="CommitChangelistDialog2" timestamp="1584816252562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="240" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584816252562" />
     <state x="259" y="436" key="ComposerInitDialogKey" timestamp="1584724634435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="259" y="436" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1584724634435" />
-    <state width="906" height="281" key="GridCell.Tab.0.bottom" timestamp="1584724534311">
+    <state width="906" height="281" key="GridCell.Tab.0.bottom" timestamp="1584739636318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="906" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584724534311" />
-    <state width="906" height="281" key="GridCell.Tab.0.center" timestamp="1584724534310">
+    <state width="906" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584739636318" />
+    <state width="906" height="281" key="GridCell.Tab.0.center" timestamp="1584739636318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="906" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584724534310" />
-    <state width="906" height="281" key="GridCell.Tab.0.left" timestamp="1584724534310">
+    <state width="906" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584739636318" />
+    <state width="906" height="281" key="GridCell.Tab.0.left" timestamp="1584739636318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="906" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584724534310" />
-    <state width="906" height="281" key="GridCell.Tab.0.right" timestamp="1584724534311">
+    <state width="906" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584739636318" />
+    <state width="906" height="281" key="GridCell.Tab.0.right" timestamp="1584739636318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="906" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584724534311" />
-    <state x="-99" y="164" key="SettingsEditor" timestamp="1584724908193">
+    <state width="906" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584739636318" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1584797404362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-99" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584724908193" />
-    <state x="194" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584724037533">
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1584797404362" />
+    <state x="265" y="338" key="NewPhpClassDialog" timestamp="1584732184042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="194" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584724037533" />
+    <state x="265" y="338" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584732184042" />
+    <state x="314" y="447" key="NewPhpFileDialog" timestamp="1584816809915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="314" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584816809915" />
+    <state x="421" y="325" key="SettingsEditor" timestamp="1584797222319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="421" y="325" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584797222319" />
+    <state x="785" y="403" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584797277725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="785" y="403" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584797277725" />
+    <state x="194" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584793455141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="194" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584793455141" />
+    <state x="168" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1584819600122">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="168" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584819600122" />
   </component>
 </project>

@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/parcel','TasksController@show');
+Route::get('/parcel/{id}','TasksController@counter');
+Route::get('/info_work','TasksController@work');
+Route::get('/info_work/{id}','TasksController@work_counter');
