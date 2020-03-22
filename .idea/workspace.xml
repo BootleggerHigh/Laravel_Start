@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f68b3081-415b-49b1-9fef-3f2dfdab08ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +45,20 @@
         <item name="cite_db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="cite: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cite_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cite: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="logs: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cite_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cite: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="posts: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -184,9 +193,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\project\resources\views" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Web Page.Unnamed">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -212,7 +226,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584724025837</updated>
       <workItem from="1584724037538" duration="12591000" />
-      <workItem from="1584793444940" duration="23066000" />
+      <workItem from="1584793444940" duration="29946000" />
+      <workItem from="1584898148201" duration="17026000" />
     </task>
     <servers />
   </component>
@@ -228,6 +243,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="418" y="88" width="816" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584799460264" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584909286981">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584909286981" />
+    <state x="309" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584906700395">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="309" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584906700395" />
     <state x="240" y="118" key="CommitChangelistDialog2" timestamp="1584816252562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -260,25 +283,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="265" y="338" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584732184042" />
-    <state x="314" y="447" key="NewPhpFileDialog" timestamp="1584816809915">
+    <state x="314" y="447" key="NewPhpFileDialog" timestamp="1584906633402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="314" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584816809915" />
-    <state x="421" y="325" key="SettingsEditor" timestamp="1584797222319">
+    <state x="314" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584906633402" />
+    <state x="421" y="325" key="SettingsEditor" timestamp="1584920408276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="421" y="325" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584797222319" />
+    <state x="421" y="325" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584920408276" />
+    <state x="690" y="325" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1584917369129">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="325" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584917369129" />
     <state x="785" y="403" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584797277725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="403" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584797277725" />
-    <state x="194" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584793455141">
+    <state x="194" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584898228924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="194" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584793455141" />
-    <state x="168" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1584819600122">
+    <state x="194" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584898228924" />
+    <state x="308" y="121" width="607" height="804" key="find.popup" timestamp="1584825009027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="168" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584819600122" />
+    <state x="308" y="121" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584825009027" />
+    <state x="168" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1584918525083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="168" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584918525083" />
   </component>
 </project>

@@ -13,10 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/parcel','TasksController@show');
-Route::get('/parcel/{id}','TasksController@counter');
-Route::get('/info_work','TasksController@work');
-Route::get('/info_work/{id}','TasksController@work_counter');
+Route::get('/','TasksController@index');
+Route::get('task/{id}','TasksController@counter_increments');
+Route::get('logs','LogsController@show');
+Route::get('log/{id}','LogsController@status');
