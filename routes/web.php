@@ -12,8 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/','TasksController@index');
-Route::get('task/{id}','TasksController@counter_increments');
-Route::get('logs','LogsController@show');
-Route::get('log/{id}','LogsController@status');
+Route::get('/','PlacesController@show');
+Route::match(['get', 'post'],'create','PlacesController@create');
+Route::get('places/{id}/','PlacesController@show_places');
+Route::match(['get','post'],'places/{id}/photos/add','PlacesController@uploads_image');
