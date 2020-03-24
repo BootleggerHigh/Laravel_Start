@@ -11,46 +11,46 @@ class PlacesController extends Controller
     public function show()
     {
         $model = Place::all();
-        return view('show_point',['info'=>$model]);
+        return view('show_point', ['info' => $model]);
     }
+
     public function create(PlaceRequest $request)
     {
-        if($request->isMethod('GET'))
-        {
+        if ($request->isMethod('GET')) {
             return view('create');
-        }
-        else if ($request->isMethod('POST'))
-        {
-            Place::create(['name'=>$request->name,'type'=>$request->type]);
+        } else {
+            if ($request->isMethod('POST')) {
+                Place::create(['name' => $request->name, 'type' => $request->type]);
+                return redirect('/');
+            }
         }
         return redirect('/');
     }
+
     public function show_places($id)
     {
         $model = Place::findOrFail($id);
-        $image = (Storage::allFiles('public/'.$id));
-        $new_image = str_replace('public/','',$image);
-     return view('show_places',['info'=>$model,'image'=>$new_image]);
+        $image = (Storage::allFiles('public/' . $id));
+        $new_image = str_replace('public/', '', $image);
+        return view('show_places', ['info' => $model, 'image' => $new_image]);
     }
-    public function uploads_image(PlaceRequest $request,$id)
+
+    public function uploads_image(PlaceRequest $request)
     {
-        if($request->isMethod('GET'))
-        {
-            if(Place::findOrFail($id))
-            {
-                return view('image_upload',['id'=>$id]);
+        if ($request->isMethod('GET')) {
+            $object_place = Place::all('id', 'name');
+            return view('image_upload', ['objects' => $object_place]);
+        } else {
+            if ($request->isMethod('POST')) {
+                if ($request->hasFile('file')) {
+                    $files = $request->file('file');
+                    foreach ($files as $file) {
+                        $filename = $file->getClientOriginalName();
+                        $file->move('../storage/app/public' . "/" . $request->id, $filename);
+                    }
+                }
             }
         }
-        else if ($request->isMethod('POST'))
-        {
-            if($request->hasFile('file'))
-            {
-                $files = $request->file('file');
-                foreach ($files as $file) {
-                    $filename = $file->getClientOriginalName();
-                    $file->move('../storage/app/public'."/".$id, $filename);
-    }
-}
-        }
+        return redirect('/');
     }
 }

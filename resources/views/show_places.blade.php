@@ -1,3 +1,6 @@
+@extends('index')
+
+@section('content')
 <table>
     <tr>
         <th>Название</th>
@@ -18,3 +21,4 @@
         </td>
     </tr>
 </table>
+@endsection
