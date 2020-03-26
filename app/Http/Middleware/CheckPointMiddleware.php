@@ -16,13 +16,13 @@ class CheckPointMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if(isset($request->id))
-        {
-            if(!Place::find($request->id))
-            {
-                return redirect('/');
-            }
-        }
+//        if(isset($request->id))
+//        {
+//            if(!Place::find($request->id))
+//            {
+//                return redirect('/');
+//            }
+//        }
         return $next($request);
     }
 }

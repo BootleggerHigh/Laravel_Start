@@ -4,12 +4,15 @@
     <form action="{{route('post.create')}}" method="POST">
         @csrf
         @method("post")
-        <input type="text" placeholder="Введите место" name="name" value="{{old('point')}}">
+        <input type="text" placeholder="Введите название" name="type_name">
+        <label for="type">
+            Место :
         <select name="type">
             <option value="Парк">Парк</option>
             <option value="Автостоянка">Автостоянка</option>
             <option value="Озеро">Озеро</option>
         </select>
+        </label>
         <button type="submit">Добавить</button>
     </form>
     @if ($errors->any())

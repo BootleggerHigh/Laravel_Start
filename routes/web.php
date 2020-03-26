@@ -16,9 +16,10 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get('/show', 'PlacesController@show');
+
 Route::name('post.')->group(function () {
     Route::match(['get', 'post'], 'create', 'PlacesController@create')->name('create');
     Route::get('places/{id}/', 'PlacesController@show_places')->name('places');
-    Route::match(['get', 'post'], '/photos/add/', 'PlacesController@uploads_image')->name('image_places')
-        ->middleware('check.point');
+    Route::match(['get', 'post'], '/photos/add/', 'PlacesController@uploads_image')->name('image_places');
+    Route::match(['get','post'],'assessment','PlacesController@assessment')->name('assessment');
 });

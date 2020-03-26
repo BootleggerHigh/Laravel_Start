@@ -11,7 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeders::class);
-        $this->call(TasksTableSeeder::class);
+        factory(\App\User::class,10)->create()->each(function ($user){
+           $user->avatars()->save(factory(\App\Models\Avatar::class)->make());
+        });
     }
 }
