@@ -3,6 +3,6 @@
     <br/>
     <a href="{{route('image.create')}}">Добавить фотографию к месту</a>
     <br/>
-    <a href="{{url('/show')}}">Все места</a>
+    <a href="{{route('place.index')}}">Все места</a>
     <br/>
 </nav>

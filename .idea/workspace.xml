@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f68b3081-415b-49b1-9fef-3f2dfdab08ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/nav/nav_place.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlacesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PlacesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckPointMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckPointMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Place.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_23_022617_create_places_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/image_upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/image_upload.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/show_places.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show_places.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/show_point.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show_point.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlacesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UndefinedController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/place/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/image_upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/image/image_upload.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/nav_place.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show_places.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/place/show_places.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show_point.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/place/index_place.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,16 +39,16 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cite_db" type="feb32156:DbDataSourceImpl" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cite_db" type="feb32156:DbDataSourceImpl" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cite_db" type="feb32156:DbDataSourceImpl" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="cite: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
@@ -195,17 +192,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\project\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\project" />
       <recent name="C:\OSPanel\domains\project\resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\project\resources\views\place" />
+      <recent name="C:\OSPanel\domains\project\resources\views\image" />
+      <recent name="C:\OSPanel\domains\project\resources\views\nav" />
+      <recent name="C:\OSPanel\domains\project\app\Models" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Page.Unnamed">
@@ -235,7 +235,9 @@
       <workItem from="1584793444940" duration="29946000" />
       <workItem from="1584898148201" duration="40948000" />
       <workItem from="1584992673395" duration="17113000" />
-      <workItem from="1585052804151" duration="50454000" />
+      <workItem from="1585052804151" duration="51104000" />
+      <workItem from="1585191946307" duration="202000" />
+      <workItem from="1585311277964" duration="14224000" />
     </task>
     <servers />
   </component>
@@ -247,14 +249,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="126" y="178" key="#Servers/0.0.1920.1040@0.0.1920.1040" timestamp="1584725027713" />
-    <state x="418" y="88" width="816" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585175221220">
+    <state x="724" y="129" width="816" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585192133099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="418" y="88" width="816" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585175221220" />
+    <state x="724" y="129" width="816" height="670" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585192133099" />
     <state x="342" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585183847035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585183847035" />
+    <state x="536" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585311467489">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585311467489" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585011615006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -291,10 +297,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="906" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584739636318" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1584797404362">
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1585192141137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1584797404362" />
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1585192141137" />
     <state x="265" y="338" key="NewPhpClassDialog" timestamp="1584931770778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

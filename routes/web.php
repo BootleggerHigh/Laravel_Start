@@ -15,11 +15,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/show', 'PlacesController@show');
+//Route::get('/show', 'UndefinedController@show');
+//
+//Route::name('post.')->group(function () {
+//    Route::match(['get', 'post'], 'create', 'UndefinedController@create')->name('create');
+//    Route::get('places/{id}/', 'UndefinedController@show_places')->name('places');
+//    Route::match(['get', 'post'], '/photos/add/', 'UndefinedController@uploads_image')->name('image_places');
+//    Route::match(['get','post'],'assessment','UndefinedController@assessment')->name('assessment');
+//});
 
-Route::name('post.')->group(function () {
-    Route::match(['get', 'post'], 'create', 'PlacesController@create')->name('create');
-    Route::get('places/{id}/', 'PlacesController@show_places')->name('places');
-    Route::match(['get', 'post'], '/photos/add/', 'PlacesController@uploads_image')->name('image_places');
-    Route::match(['get','post'],'assessment','PlacesController@assessment')->name('assessment');
-});
+Route::resource('place','TypeController');
+Route::resource('image','ImageController')->except(['index','edit','update','show']);
+Route::resource('ratings','RatingsController')->only('store');
+
+Route::get('download/{file}', 'DownloadsController@download')->name('download');

@@ -1,7 +1,7 @@
 @extends('index')
 
 @section('content')
-    <form action="{{route('post.image_places')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('image.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('post')
         <label for="id_type">

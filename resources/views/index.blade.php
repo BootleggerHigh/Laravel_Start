@@ -8,7 +8,7 @@
     <title>Места</title>
 </head>
 <body>
-@include('nav_place')
+@include('nav.nav_place')
 @yield('content')
 
 </body>

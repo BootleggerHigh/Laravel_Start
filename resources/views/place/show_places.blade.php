@@ -1,7 +1,7 @@
 @extends('index')
 
 @section('content')
-    <form action="{{route('post.assessment')}}" method="POST">
+    <form action="{{route('ratings.store')}}" method="POST">
         @csrf
         @method('POST')
         <table>
