@@ -11,7 +11,7 @@
             <tr>
                 <td>{{$point->name}}</td>
                 <td>{{$point->place}}</td>
-                <td><a href="{{action('PlacesController@show_places',['id'=>$point->id])}}">Дополнительная
+                <td><a href="{{action('UndefinedController@show_places',['id'=>$point->id])}}">Дополнительная
                         информация {{$point->name}}</a>
                 </td>
 

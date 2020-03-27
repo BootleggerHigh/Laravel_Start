@@ -1,9 +1,9 @@
 @extends('index')
 
 @section('content')
-    <form action="{{route('post.create')}}" method="POST">
+    <form action="{{route('place.store')}}" method="POST">
         @csrf
-        @method("post")
+        @method("POST")
         <input type="text" placeholder="Введите название" name="type_name">
         <label for="type">
             Место :
